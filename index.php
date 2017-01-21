@@ -4,10 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SilverNeedle</title>
     <link rel="stylesheet" type="text/css"  href="style.css">
-    <link rel="stylesheet" type="text/css"  href="jasny-bootstrap.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
-    <script src="jasny-bootstrap.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
     <script src="script.js"></script>
   </head>
