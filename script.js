@@ -9,8 +9,8 @@ function login(){
   xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 	  if (xmlhttp.responseText === "invalidUserNamePassword"){
-		var a = document.getElementById("loginError");
-		a.innerHTML = "<h3>Invalid user name or password.</h3>";
+		  var a = document.getElementById("loginError");
+		  a.innerHTML = "<h3>Invalid user name or password.</h3>";
 	  } else {
       window.location.reload();
 	  }
