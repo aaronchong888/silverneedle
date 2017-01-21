@@ -14,7 +14,7 @@
      <h2>Register</h2>
      <form method="post" action="register.php" enctype="multipart/form-data" >
           <input name="username" id="loginUserName" placeholder="Username" type="text">';
-          <input id="pw" name="password" id="loginPassword" placeholder="Password" type="password">';
+          <input name="password" id="loginPassword" placeholder="Password" type="password">';
           <input type="submit" name="submit" value="Submit" />
      </form>
 <?php
@@ -33,7 +33,7 @@
 if(!empty($_POST)) {
  try {
      $name = $_POST['username'];
-     $pw = $_POST['pw'];
+     $pw = $_POST['password'];
      $date = date("Y-m-d");
      // Insert data
      $sql_insert = "INSERT INTO userList (userName, password, date) 
