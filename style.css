@@ -136,3 +136,8 @@ input[type="submit"].log_out:hover {
     background-color: #6D7781;
     color: black;
 }
+
+.result_text {
+  color: white;
+  font: 13px;
+}
