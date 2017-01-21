@@ -31,6 +31,7 @@
     print '</div>';
     print '<h2 class="heading"> What to eat next?</h2><br>';
     print '<button class="myButton"></button>';
+    print '<input type="file" accept="image/*" capture="camera">';
   }
 ?>
 </div>
