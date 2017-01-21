@@ -30,7 +30,7 @@
     print '</form>';
     print '</div>';
     print '<h2 class="heading"> What to eat next?</h2><br>';
-    print '<button class="myButton"><input type="file" accept="image/*" capture="capture"></button>';
+    print '<input type="file" accept="image/*" capture="capture">';
   }
 ?>
 </div>
