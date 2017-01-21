@@ -18,6 +18,7 @@
      
      if(count($registrants) > 0) {
 	   setcookie("userName", $_GET["userName"], time()+3600);
+       print 'Success';
      }
      else {
         print 'invalidUserNamePassword';

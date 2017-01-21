@@ -8,9 +8,6 @@ function login(){
 
   xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      // TODO: 3. If the response text is "invalidUserNamePassword", then we should notify
-      //          the user by replacing the innerHTML of <div id="loginError"> element with
-      //          "<h3>Invalid user name or password.</h3>".
 	  if (xmlhttp.responseText === "invalidUserNamePassword"){
 		var a = document.getElementById("loginError");
 		a.innerHTML = "<h3>Invalid user name or password.</h3>";
@@ -18,8 +15,6 @@ function login(){
 		var b = document.getElementById("content");
 		b.innerHTML = xmlhttp.responseText;
 	  }
-      // TODO: 4. If the reponse text is not "invalidUserNamePassword", then the login is successful.
-      //          We should replace the innerHTML of <div id="content"> element with responseText.
     }
   }
 
