@@ -34,12 +34,8 @@
     print '</div>';
     print '<h2 class="heading"> What to eat next?</h2><br>';
     print '<div class="fileinput fileinput-new" data-provides="fileinput">';
-    print '<div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 400px; height: 400px;"></div>';
-    print '<div>';
-    print '<span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>';
-    print '<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>';
-    print '</div>';
-    print '</div>';
+    print '<img src="images/needle.png" alt="Take a Picture!" style="width:400px;height:400px;">';
+    print '<input type="file" accept="image/*" capture="capture">';
   }
 ?>
 </div>
