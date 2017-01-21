@@ -7,7 +7,7 @@
  try{
      $conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
      $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-     $sql = "CREATE TABLE users(
+     $sql = "CREATE TABLE user(
      id INT NOT NULL IDENTITY(1,1) 
      PRIMARY KEY(id),
      userName VARCHAR(30),
