@@ -24,6 +24,9 @@
   }
   else{
     print '<h3 id="heading"> Welcome '.$_COOKIE["userName"].'.</h3><br>';
+    print '<form class="logoutForm" action="handleLogout.php" method="get">';
+    print '<input type="submit" value="Log Out">';
+    print '</form>';
   }
 ?>
 </div>

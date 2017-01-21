@@ -12,7 +12,7 @@
      catch(Exception $e){
          die(var_dump($e));
      }
-     $sql_select = "SELECT * FROM userList where userName='".$_GET["userName"]."'";
+     $sql_select = "SELECT * FROM userList where userName='".$_GET["userName"]."' AND password='".$_GET["password"]."'";
      $stmt = $conn->query($sql_select);
      $registrants = $stmt->fetchAll(); 
      
