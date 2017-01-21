@@ -1,5 +1,23 @@
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <title>SilverNeedle</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+<body>
+<div id="content">
+     <h2>Register</h2>
+     <form method="post" action="register.php" enctype="multipart/form-data" >
+          <input name="username" id="loginUserName" placeholder="Username" type="text">';
+          <input id="pw" name="password" id="loginPassword" placeholder="Password" type="password">';
+          <input type="submit" name="submit" value="Submit" />
+     </form>
 <?php
- // DB connection info
  $host = "tcp:a75fmi0ygp.database.windows.net";
  $user = "silverneedle";
  $pwd = "Silver123";
@@ -8,8 +26,8 @@
      $conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
      $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
-     $name = "aaron";
-     $pw = "test";
+     $name = $_POST['username'];
+     $pw = $_POST['pw'];
      $date = date("Y-m-d");
      // Insert data
      $sql_insert = "INSERT INTO userList (userName, password, date) 
@@ -24,5 +42,7 @@
      die(var_dump($e));
  }
  echo "<h3>Your're registered!</h3>";
-
- ?>
+?>
+</div>
+</body>
+</html>
