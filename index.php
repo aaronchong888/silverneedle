@@ -35,7 +35,7 @@
     print '<img src="images/needle.png" alt="Take a Picture!" style="width:400px;height:400px;"><br>';
     print '<form class="logoutForm" action="result.php" method="post">';
     print '<input type="file" accept="image/*" capture="capture">';
-    print '<input type="submit" class="log_out" value="Check it out">';
+    print '<input type="submit" value="Check it out">';
     print '</form>';
   }
 ?>
