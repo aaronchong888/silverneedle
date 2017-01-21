@@ -135,7 +135,7 @@ input[type="submit"].log_out:hover {
     color: black;
 }
 
-input[type="submit"].myButton {
+.myButton{
     background:url(./images/needle.png) no-repeat;
     cursor:pointer;
     border:none;
@@ -143,6 +143,7 @@ input[type="submit"].myButton {
     height:200px;
 }
 
-input[type="submit"].myButton:active {   
+.myButton:active
+{   
     background:url(./images/needle.png) no-repeat;
 }
