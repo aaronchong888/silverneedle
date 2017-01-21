@@ -45,7 +45,7 @@ function login(){
             },
             type: "POST",
             // Request body
-            data: "{body}",
+            data: "{http://silverneedle.azurewebsites.net/images/apple.jpg}",
         })
         .done(function(data) {
             alert("success");

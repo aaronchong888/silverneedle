@@ -23,7 +23,7 @@ $url->setQueryVariables($parameters);
 $request->setMethod(HTTP_Request2::METHOD_POST);
 
 // Request body
-$request->setBody("{body}");
+$request->setBody("{http://silverneedle.azurewebsites.net/images/apple.jpg}");
 
 try
 {
