@@ -26,11 +26,6 @@ h2 {
   font-size: 13px;
 }
 
-a {
-  color: #435160;
-  text-decoration: none;
-}
-
 .login {
   width: 350px;
   position: absolute;
@@ -84,6 +79,8 @@ input[type="submit"]:hover {
 }
 
 .register {
+  color: #435160;
+  text-decoration: none;
   margin-top: 30px;
   display: block;
   font-size: 15px;
