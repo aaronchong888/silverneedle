@@ -17,11 +17,11 @@ h2 {
 .err_msg {
   color: cyan;
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 12px;
   position: absolute;
   top: 90%;
   left: 50%;
-  margin-left: -195px;
+  margin-left: -175px;
 }
 
 a {
@@ -98,7 +98,7 @@ input[type="submit"]:hover {
 }
 
 .profile {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   font-weight: bold;
   color: #6D7781;
@@ -109,7 +109,7 @@ input[type="submit"]:hover {
   left: 80%;
 }
 .profile:hover {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   font-weight: bold;
   color: #435160;
