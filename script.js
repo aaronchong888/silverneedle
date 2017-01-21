@@ -32,7 +32,7 @@ function login(){
         var params = {
             // Request parameters
             "visualFeatures": "Description",
-            "details": "{string}",
+            "details": "string",
             "language": "en",
         };
 
@@ -41,11 +41,11 @@ function login(){
             beforeSend: function(xhrObj){
                 // Request headers
                 xhrObj.setRequestHeader("Content-Type","application/json");
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{bdfa4eea082d4d759fae63b21b478c6e}");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","bdfa4eea082d4d759fae63b21b478c6e");
             },
             type: "POST",
             // Request body
-            data: "{http://silverneedle.azurewebsites.net/images/apple.jpg}",
+            data: "http://silverneedle.azurewebsites.net/images/apple.jpg",
         })
         .done(function(data) {
             alert("success");
