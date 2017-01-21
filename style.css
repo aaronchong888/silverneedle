@@ -102,7 +102,9 @@ input[type="submit"]:hover {
   text-align: center;
   font-weight: bold;
   color: #6D7781;
+  text-decoration: underline;
   position: absolute;
+  margin-top: 25px;
   top: 5%;
   left: 80%;
 }
@@ -124,7 +126,7 @@ input[type="submit"].log_out{
   font-size: 11px;
   position: absolute;
   top: 5%;
-  left: 90%;
+  left: 85%;
 }
 
 input[type="submit"].log_out:hover {
