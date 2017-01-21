@@ -23,10 +23,13 @@
     print '<br><div id="loginError"></div></div>';
   }
   else{
-    print '<h2 id="heading"> What to eat next? '.$_COOKIE["userName"].'.</h2><br>';
+    print '<div class="top_left">';
+    print '<a class="register" href="/profile.php">'.$_COOKIE["userName"].'</a>';
     print '<form class="logoutForm" action="handleLogout.php" method="get">';
-    print '<input type="submit" value="Log Out">';
+    print '<input type="submit" class="log_out" value="Log Out">';
     print '</form>';
+    print '</div>';
+    print '<h2 id="heading"> What to eat next?</h2><br>';
   }
 ?>
 </div>
