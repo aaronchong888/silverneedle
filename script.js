@@ -28,7 +28,7 @@ function login(){
 	xmlhttp.send();
 }
 
- $(function upload() {
+ function upload() {
         var params = {
             // Request parameters
             "visualFeatures": "Description",
@@ -53,7 +53,7 @@ function login(){
         .fail(function() {
             alert("error");
         });
-    });
+}
 /*
 function updateProfile(){
   
