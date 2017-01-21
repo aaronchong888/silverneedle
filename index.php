@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css"  href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <script src="jasny-bootstrap.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
     <script src="script.js"></script>
   </head>
@@ -30,9 +31,12 @@
     print '</form>';
     print '</div>';
     print '<h2 class="heading"> What to eat next?</h2><br>';
-    print '<div class="dropZoneContainer">';
-    print '<input type="file" id="drop_zone" class="FileUpload" accept=".jpg,.png,.gif" onchange="handleFileSelect(this) " />';
-    print '<div class="dropZoneOverlay">Drag and drop your image <br />or<br />Click to add</div>';
+    print '<div class="fileinput fileinput-new" data-provides="fileinput">';
+    print '<div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>';
+    print '<div>';
+    print '<span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>';
+    print '<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>';
+    print '</div>';
     print '</div>';
   }
 ?>
