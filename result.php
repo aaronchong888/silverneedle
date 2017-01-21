@@ -1,5 +1,5 @@
 <?php
-require_once 'HTTP/Request2.php';
+require_once('HTTP/Request2.php');
 $request = new Http_Request2('https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze');
 $url = $request->getUrl();
 
@@ -21,9 +21,9 @@ $parameters = array(
 $url->setQueryVariables($parameters);
 
 $request->setMethod(HTTP_Request2::METHOD_POST);
-$content = file_get_contents($key['tmp_name']);
+
 // Request body
-$request->setBody("{".$content."}");
+$request->setBody("{body}");
 
 try
 {

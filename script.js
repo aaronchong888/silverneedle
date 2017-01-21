@@ -28,7 +28,32 @@ function login(){
 	xmlhttp.send();
 }
 
+ $(function upload() {
+        var params = {
+            // Request parameters
+            "visualFeatures": "Description",
+            "details": "{string}",
+            "language": "en",
+        };
 
+        $.ajax({
+            url: "https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?" + $.param(params),
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Content-Type","application/json");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{bdfa4eea082d4d759fae63b21b478c6e}");
+            },
+            type: "POST",
+            // Request body
+            data: "{body}",
+        })
+        .done(function(data) {
+            alert("success");
+        })
+        .fail(function() {
+            alert("error");
+        });
+    });
 /*
 function updateProfile(){
   
