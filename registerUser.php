@@ -8,7 +8,7 @@
      $conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
      $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
-     $name = "test";
+     $name = "aaron";
      $pw = "test";
      $date = date("Y-m-d");
      // Insert data
