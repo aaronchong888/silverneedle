@@ -53,6 +53,9 @@ function login(){
             temp = temp + "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
             Object.keys(data).forEach(function(key) {
               temp = temp + key + " : " + data[key] +"<br>";
+              Object.keys(data[key]).forEach(function(key2) {
+                temp = temp + "  " + key2 + " : " + data[key][key2] +"<br>";
+              });
             });
             a.innerHTML = temp;
         })
