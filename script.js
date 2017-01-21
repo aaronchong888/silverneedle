@@ -28,11 +28,6 @@ function login(){
 	xmlhttp.send();
 }
 
-(function($){       
-  $('input[type="file"]').bind('change',function(){           
-      $("#img_text").html($('input[type="file"]').val());
-  });
-})(jQuery)
 
 /*
 function updateProfile(){
