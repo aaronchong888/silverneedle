@@ -97,7 +97,7 @@ input[type="submit"]:hover {
   color: #6D7781;
 }
 
-.log_out{
+input[type="submit"].log_out{
   background: cyan;
   border: 0;
   width: 200px;
