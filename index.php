@@ -20,7 +20,7 @@
     print '<input name="password" id="loginPassword" placeholder="Password" type="password">';
     print '<input type="submit" value="Login" onclick="login()">';
     print '<a class="register" href="/register.php">Register</a>';
-    print '</div><div id="loginError"></div>';
+    print '<div id="loginError"></div></div>';
   }
   else{
     print '<h3 id="heading"> Welcome '.$_COOKIE["userName"].'.</h3><br>';
