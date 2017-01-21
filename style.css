@@ -97,6 +97,23 @@ input[type="submit"]:hover {
   color: #6D7781;
 }
 
+.profile {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #6D7781;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+}
+.profile:hover {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #435160;
+}
+
+
 input[type="submit"].log_out{
   background-color: black;
   color: white;
@@ -105,6 +122,9 @@ input[type="submit"].log_out{
   height: 30px;
   border-radius: 3px;
   font-size: 11px;
+  position: absolute;
+  top: 5%;
+  left: 90%;
 }
 
 input[type="submit"].log_out:hover {

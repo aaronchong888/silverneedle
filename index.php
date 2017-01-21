@@ -20,11 +20,11 @@
     print '<input name="password" id="loginPassword" placeholder="Password" type="password">';
     print '<input type="submit" value="Login" onclick="login()">';
     print '<a class="register" href="/register.php">Register</a>';
-    print '<div id="loginError" class="err_msg"></div></div>';
+    print '</div><div id="loginError" class="err_msg"></div>';
   }
   else{
     print '<div class="top_left">';
-    print '<a class="register" href="/profile.php">'.$_COOKIE["userName"].'</a>';
+    print '<a class="profile" href="/profile.php">'.$_COOKIE["userName"].'</a>';
     print '<form class="logoutForm" action="handleLogout.php" method="get">';
     print '<input type="submit" class="log_out" value="Log Out">';
     print '</form>';
