@@ -47,7 +47,14 @@ function login(){
             data: "{\"url\":\"http://silverneedle.azurewebsites.net/images/apple.jpg\"}",
         })
         .done(function(data) {
-            alert(data);
+            alert("success");
+            var a = document.getElementById("result");
+            temp = "<h2 class='heading'>Result</h2><br>";
+            temp = temp + "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
+            Object.keys(data).forEach(function(key) {
+              temp = temp + key + " : " + obj[key] +"<br>";
+            });
+            a.innerHTML = temp;
         })
         .fail(function() {
             alert("error");
