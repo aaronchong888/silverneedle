@@ -52,7 +52,7 @@ function login(){
             temp = "<h2 class='heading'>Result</h2><br>";
             temp = temp + "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
             Object.keys(data).forEach(function(key) {
-              temp = temp + key + " : " + obj[key] +"<br>";
+              temp = temp + key + " : " + data[key] +"<br>";
             });
             a.innerHTML = temp;
         })
