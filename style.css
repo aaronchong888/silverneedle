@@ -17,11 +17,11 @@ h2 {
 .err_msg {
   color: cyan;
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 13px;
   position: absolute;
   top: 90%;
   left: 50%;
-  margin-left: -175px;
+  margin-left: -195px;
 }
 
 a {
