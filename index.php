@@ -20,7 +20,7 @@
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input type="text" name="name" id="name"/></br>
-       Email <input type="text" name="email" id="email"/></br>
+       Password <input type="password" name="pw" id="pw"/></br>
        <input type="submit" name="submit" value="Submit" />
  </form>
  <?php
