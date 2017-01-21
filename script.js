@@ -12,8 +12,7 @@ function login(){
 		var a = document.getElementById("loginError");
 		a.innerHTML = "<h3>Invalid user name or password.</h3>";
 	  } else {
-		var b = document.getElementById("content");
-		b.innerHTML = xmlhttp.responseText;
+		  header( "url=index.php" );
 	  }
     }
   }
