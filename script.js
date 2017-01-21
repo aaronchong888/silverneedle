@@ -52,24 +52,31 @@ function login(){
             temp = "<h2 class='heading'>Result</h2><br>";
             temp = temp + "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
             temp = temp + "<div class=\"result_text\">"
-            temp = temp + "Description: <br>" + data["description"]["tags"] +"<br>";
-            temp = temp + "Caption: <br>" + data["description"]["captions"][0]["text"] +"<br>";
+            temp = temp + "Description: <br>";
+            tag = data["description"]["tags"].split(',');
+            for each (item in tag) {
+              temp += "<a onclick=\"query()\">" + item + "</a>, ";
+            }
+            temp = temp + "<br><br>";
+            temp = temp + "Caption: <br>" + data["description"]["captions"][0]["text"] +"<br><br>";
             temp = temp + "</div>"
-            /*for (var i = 0; i < data.length; i++) {
-                temp = temp + "  " + key2 + " : " + data[key][key2] +"<br>";
-            };
-            Object.keys(data).forEach(function(key) {
-              temp = temp + key + " : " + data[key] +"<br>";
-              Object.keys(data[key]).forEach(function(key2) {
-                temp = temp + "  " + key2 + " : " + data[key][key2] +"<br>";
-              });
-            });
-*/
             a.innerHTML = temp;
         })
         .fail(function() {
             alert("error");
         });
+}
+
+function query(){
+  $.get( "example.php", function() {
+    alert( "success" );
+  })
+  .done(function(data) {
+    alert( "second success" );
+  })
+  .fail(function() {
+    alert( "error" );
+  });
 }
 /*
 function updateProfile(){
