@@ -28,7 +28,7 @@ function login(){
 	xmlhttp.open("GET", "handleLogin.php?userName="+ uname.value+ "&password="+ upw.value, true);
 	xmlhttp.send();
 }
-
+/*
 function updateProfile(){
   
   // TODO: 1. Retrive the nick name, gender and brief introduction
@@ -74,3 +74,4 @@ function inputCheck(){
 		return false;
 	}
 }
+*/
