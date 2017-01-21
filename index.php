@@ -17,7 +17,7 @@
     print '<div class="login">';
     print '<h2>Silver</h2>';
     print '<input name="username" id="loginUserName" placeholder="Username" type="text">';
-    print '<input id="pw" name="password" id="loginPassword" placeholder="Password" type="password">';
+    print '<input name="password" id="loginPassword" placeholder="Password" type="password">';
     print '<input type="submit" value="Login" onclick="login()">';
     print '<a class="register" href="/register.php">Register</a>';
     print '</div><div id="loginError"></div>';

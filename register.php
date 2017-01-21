@@ -48,8 +48,8 @@ if(!empty($_POST)) {
      die(var_dump($e));
  }
  setcookie("userName", $name, time()+3600);
- echo "<h2 class='register'> Redirecting to main page...</h2>";
- header( "refresh:5;url=index.php" );
+ echo "<h3 class='register'> Success! Redirecting to main page...</h3>";
+ header( "refresh:2;url=index.php" );
 }
 
 ?>
