@@ -22,10 +22,16 @@
  $user = "silverneedle";
  $pwd = "Silver123";
  $db = "SilverNeedle";
+
  try{
      $conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
      $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-
+    }
+ catch(Exception $e){
+     die(var_dump($e));
+ }
+if(!empty($_POST)) {
+ try {
      $name = $_POST['username'];
      $pw = $_POST['pw'];
      $date = date("Y-m-d");
@@ -42,6 +48,8 @@
      die(var_dump($e));
  }
  echo "<h3>Your're registered!</h3>";
+}
+
 ?>
 </div>
 </body>
