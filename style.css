@@ -134,3 +134,16 @@ input[type="submit"].log_out:hover {
     background-color: #6D7781;
     color: black;
 }
+
+.myButton{
+    background:url(./images/needle.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:200px;
+    height:200px;
+}
+
+.myButton:active
+{   
+    background:url(./images/needle.png) no-repeat;
+}

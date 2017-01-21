@@ -24,12 +24,13 @@
   }
   else{
     print '<div class="top_left">';
-    print '<a class="profile" href="/profile.php">'.$_COOKIE["userName"].'   </a>';
+    print '<a class="profile" href="/profile.php">'.$_COOKIE["userName"].'</a>';
     print '<form class="logoutForm" action="handleLogout.php" method="get">';
     print '<input type="submit" class="log_out" value="Log Out">';
     print '</form>';
     print '</div>';
     print '<h2 class="heading"> What to eat next?</h2><br>';
+    print '<input class="myButton" type="submit" value="">';
   }
 ?>
 </div>
