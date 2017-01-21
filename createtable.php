@@ -10,8 +10,8 @@
      $sql = "CREATE TABLE users(
      id INT NOT NULL IDENTITY(1,1) 
      PRIMARY KEY(id),
-     name VARCHAR(30),
-     pw VARCHAR(30),
+     userName VARCHAR(30),
+     password VARCHAR(30),
      date DATE)";
      $conn->query($sql);
  }

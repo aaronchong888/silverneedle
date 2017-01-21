@@ -1,18 +1,75 @@
  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>SilverNeedle</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+<body>
+<div id="content">
+<?php
+
+  if(!isset($_COOKIE["userName"])){
+    print '<div class="login">';
+    print '<h2>Silver</h2>';
+    print '<input name="username" id="loginUserName" placeholder="Username" type="text">';
+    print '<input id="pw" name="password" id="loginPassword" placeholder="Password" type="password">';
+    print '<input type="submit" value="Login" onclick="login()">';
+    print '<a class="register" href="/register.php">Register</a>';
+    print '</div><div id="loginError"></div>';
+  }
+  else{
+    // DB connection info
+     $host = "tcp:a75fmi0ygp.database.windows.net";
+     $user = "silverneedle";
+     $pwd = "Silver123";
+     $db = "SilverNeedle";
+     // Connect to database.
+     try {
+         $conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
+         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+     }
+     catch(Exception $e){
+         die(var_dump($e));
+     }
+     $sql_select = "SELECT * FROM users";
+     $stmt = $conn->query($sql_select);
+     $registrants = $stmt->fetchAll(); 
+     if(count($registrants) > 0) {
+         echo "<h2>People who are registered:</h2>";
+         echo "<table>";
+         echo "<tr><th>Name</th>";
+         echo "<th>Pw</th>";
+         echo "<th>Date</th></tr>";
+         foreach($registrants as $registrant) {
+             echo "<tr><td>".$registrant['name']."</td>";
+             echo "<td>".$registrant['pw']."</td>";
+             echo "<td>".$registrant['date']."</td></tr>";
+         }
+          echo "</table>";
+     } 
+
+    print '<h3 id="heading">You have successfully logged in.</h3><br>';
+    }
+  }
+?>
+</div>
+</body>
+</html>
+
+
+
+
+
+ <html>
  <head>
  <Title>Registration Form</Title>
  <style type="text/css">
-     body { background-color: #fff; border-top: solid 10px #000;
-         color: #333; font-size: .85em; margin: 20; padding: 20;
-         font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-     }
-     h1, h2, h3,{ color: #000; margin-bottom: 0; padding-bottom: 0; }
-     h1 { font-size: 2em; }
-     h2 { font-size: 1.75em; }
-     h3 { font-size: 1.2em; }
-     table { margin-top: 0.75em; }
-     th { font-size: 1.2em; text-align: left; border: none; padding-left: 0; }
-     td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
+
  </style>
  </head>
  <body>
