@@ -12,14 +12,14 @@
      catch(Exception $e){
          die(var_dump($e));
      }
-     $sql_select = "SELECT * FROM userList where userName='".$_GET["userName"]."'";
+     $sql_select = "SELECT * FROM userList where userName='".$_GET["userName"]."' AND password='".$_GET["password"]."'";
      $stmt = $conn->query($sql_select);
-     $row = $stmt->fetchAll(); 
-
-  if(array_key_exists("password", $row)&&($row["password"]==$_GET["password"])){
-	setcookie("userName", $_GET["userName"], time()+3600);
-  }
-  else{
-    print 'invalidUserNamePassword';
-  }
+     $registrants = $stmt->fetchAll(); 
+     
+     if(count($registrants) > 0) {
+	   setcookie("userName", $_GET["userName"], time()+3600);
+     }
+     else {
+        print 'invalidUserNamePassword';
+    }
 ?>
