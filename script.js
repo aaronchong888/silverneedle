@@ -27,6 +27,13 @@ function login(){
 	xmlhttp.open("GET", "handleLogin.php?userName="+ uname.value+ "&password="+ upw.value, true);
 	xmlhttp.send();
 }
+
+(function($){       
+  $('input[type="file"]').bind('change',function(){           
+      $("#img_text").html($('input[type="file"]').val());
+  });
+})(jQuery)
+
 /*
 function updateProfile(){
   

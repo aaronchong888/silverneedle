@@ -31,6 +31,13 @@
     print '</div>';
     print '<h2 class="heading"> What to eat next?</h2><br>';
     print '<input type="file" accept="image/*" capture="capture">';
+    print '<div class="file-input-wrapper">';
+    print '<button class="btn-file-input">SELECT FILES</button>';
+    print '<input type="file" name="image" id="image" value="" />';      
+    print '</div>';
+    print '<span id="img_text" style="float: right;';
+    print 'margin-right: -80px;';
+    print 'margin-top: -14px;"></span>';
   }
 ?>
 </div>
