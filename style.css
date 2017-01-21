@@ -17,6 +17,7 @@ h2 {
 
 .heading {
   margin-top: 100px;
+  margin-bottom: -20px;
 }
 
 .err_msg {
