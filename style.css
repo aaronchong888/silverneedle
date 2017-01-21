@@ -19,9 +19,9 @@ h2 {
   margin-top: 10px;
   font-size: 13px;
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
-  margin-left: -195px;
+  margin-left: -175px;
 }
 
 a {
@@ -107,7 +107,7 @@ input[type="submit"]:hover {
   margin-top: 25px;
   top: 5%;
   left: 80%;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 .profile:hover {
   font-size: 17px;
