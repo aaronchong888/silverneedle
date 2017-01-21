@@ -16,12 +16,8 @@ h2 {
 
 .err_msg {
   color: cyan;
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 13px;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  margin-left: -175px;
 }
 
 a {
@@ -127,7 +123,7 @@ input[type="submit"].log_out{
   font-size: 11px;
   position: absolute;
   top: 5%;
-  left: 85%;
+  left: 90%;
 }
 
 input[type="submit"].log_out:hover {
