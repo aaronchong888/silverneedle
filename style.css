@@ -98,17 +98,16 @@ input[type="submit"]:hover {
 }
 
 input[type="submit"].log_out{
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   border: 2px solid #555555;
   width: 200px;
   height: 20px;
   border-radius: 3px;
-  color: #fff;
   font-size: 12px;
 }
 
 input[type="submit"].log_out:hover {
-    background-color: #555555;
-    color: white;
+    background-color: #6D7781;
+    color: black;
 }
