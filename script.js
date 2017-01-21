@@ -51,7 +51,7 @@ function login(){
             var a = document.getElementById("result");
             temp = "<h2 class='heading'>Result</h2><br>";
             temp = temp + "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
-            temp = temp + data[0] + " : <br>" + data[0][0] +"<br>";
+            temp = temp + data["description"] + " : <br>" + data["description"]["tags"] +"<br>";
             /*for (var i = 0; i < data.length; i++) {
                 temp = temp + "  " + key2 + " : " + data[key][key2] +"<br>";
             };
