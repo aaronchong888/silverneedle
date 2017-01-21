@@ -29,7 +29,7 @@
     print '<input type="submit" class="log_out" value="Log Out">';
     print '</form>';
     print '</div>';
-    print '<h2 id="heading"> What to eat next?</h2><br>';
+    print '<h2 class="heading"> What to eat next?</h2><br>';
   }
 ?>
 </div>
