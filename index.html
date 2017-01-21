@@ -2,31 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Simple Note</title>
+    <title>Silver Needle</title>
     <link rel="stylesheet" type="text/css"  href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
     <script src="jquery-3.1.1.min.js"></script>
     <script src="script.js"></script>
   </head>
 
   <body>
-    <div id="left">
-      <h2>All Notes</h2>
-      <ul id="ulNotes">
-      </ul>
-    </div>
 
-    <div id="right">
-      <h2 id="rightHeader">Add New Note</h2>
-    
-      <h3>Title</h3>
-      <input type="text" id="noteTitle">
-
-      <h3>Content</h3>
-      <textarea rows="10" cols="30" id="noteContent"></textarea>
-      
-      <button id="buttonSave">Save</button>
-      <button id="buttonUpdate">Update</button>
-    </div>
+<div class='login'>
+  <h2>Register</h2>
+  <input name='username' placeholder='Username' type='text'>
+  <input id='pw' name='password' placeholder='Password' type='password'>
+  <input name='email' placeholder='E-Mail Address' type='text'>
+  <div class='agree'>
+    <input id='agree' name='agree' type='checkbox'>
+    <label for='agree'></label>Accept rules and conditions
+  </div>
+  <input class='animated' type='submit' value='Register'>
+  <a class='forgot' href='#'>Already have an account?</a>
+</div>
   </body>
 
 </html>
