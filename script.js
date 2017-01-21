@@ -53,7 +53,7 @@ function login(){
             temp = temp + "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
             temp = temp + "<div class=\"result_text\">"
             temp = temp + "Description: <br>";
-            tag = data["description"]["tags"].split(',');
+            tag = data["description"]["tags"].toString().split(',');
             tag.forEach(function(entry){
               temp += "<a onclick=\"query()\">" + entry + "</a>, ";
             });
