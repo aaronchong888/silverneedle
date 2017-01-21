@@ -32,7 +32,6 @@ function login(){
         var params = {
             // Request parameters
             "visualFeatures": "Description",
-            "details": "string",
             "language": "en",
         };
 
@@ -45,7 +44,7 @@ function login(){
             },
             type: "POST",
             // Request body
-            data: "http://silverneedle.azurewebsites.net/images/apple.jpg",
+            data: "{\"url\":\"http://silverneedle.azurewebsites.net/images/apple.jpg\"}",
         })
         .done(function(data) {
             alert("success");
