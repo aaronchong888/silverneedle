@@ -10,7 +10,7 @@
   </head>
 
 <body>
-<div id="content">
+<div class="login">
      <h2>Register</h2>
      <form method="post" action="register.php" enctype="multipart/form-data" >
           <input name="username" id="loginUserName" placeholder="Username" type="text">';
@@ -47,7 +47,9 @@ if(!empty($_POST)) {
  catch(Exception $e) {
      die(var_dump($e));
  }
- echo "<h3>Your're registered!</h3>";
+ setcookie("userName", $name, time()+3600);
+ echo "<h2 class='register'> Redirecting to main page...</h2>";
+ header( "refresh:5;url=index.php" );
 }
 
 ?>
