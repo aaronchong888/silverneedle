@@ -15,14 +15,14 @@
 <?php
 
     print '<div class="top_left">';
-    print '<a class="profile" href="/index.php">Back</a>';
+    print '<a class="profile" href="/index.php">Return</a>';
     print '<form class="logoutForm" action="handleLogout.php" method="get">';
     print '<input type="submit" class="log_out" value="Log Out">';
     print '</form>';
     print '</div>';
     print '<div id="result">';
-    print '<h2 class="heading">'.$_COOKIE["userName"].'</h2><br>';
-    print '<img src="images/graph.jpg" alt="Overall Performance" style="width:600px;height:400px;"><br>';
+    print '<h2 class="heading">'.$_COOKIE["userName"].'</h2><br><br>';
+    print '<img src="images/graph.jpg" alt="Overall Performance" style="width:600px;height:350px;"><br>';
     print '</div>';
 ?>
 </div>
