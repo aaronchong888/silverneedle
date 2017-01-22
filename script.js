@@ -101,10 +101,10 @@ function query(){
     for (var i = 0; i < data["report"]["food"]["nutrients"].length; i++){
       var obj = data["report"]["food"]["nutrients"][i];
       temp += "<tr><td>" + obj["name"] + "</td><td>" + obj["value"] + "g</td></tr>";
-      new_energy += Cookies.get('energy');
-      new_protein += Cookies.get('protein');
-      new_fat += Cookies.get('fat');
-      new_sugar += Cookies.get('sugar');
+      var new_energy += parseInt(Cookies.get('energy'));
+      var new_protein += parseInt(Cookies.get('protein'));
+      var new_fat += parseInt(Cookies.get('fat'));
+      var new_sugar += parseInt(Cookies.get('sugar'));
       Cookies.set('energy', new_energy);
       Cookies.set('protein', new_protein);
       Cookies.set('fat', new_fat);
