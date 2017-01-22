@@ -46,7 +46,7 @@ function login(){
             },
             type: "POST",
             // Request body
-            data: "{\"url\":\"http://silverneedle.azurewebsites.net/images/"+fu1"\"}",
+            data: "{\"url\":\"http://silverneedle.azurewebsites.net/images/"+fu1+"\"}",
         })
         .done(function(data) {
             alert("success");
