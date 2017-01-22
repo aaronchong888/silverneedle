@@ -149,3 +149,7 @@ th, td {
     height: 30px;
     vertical-align: center;
 }
+
+table {
+    text-align: center;
+}
