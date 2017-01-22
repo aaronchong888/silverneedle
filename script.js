@@ -82,10 +82,7 @@ function query(){
     temp += data["report"]["food"]["name"] + "<br><br>";
     for (var i = 0; i < data["report"]["food"]["nutrients"].length; i++){
       var obj = data["report"]["food"]["nutrients"][i];
-      for (var key in obj){
-          temp += obj["name"] + " : " + obj["value"] +"g <br>";
-      }
-      break;
+      temp += obj["name"] + " : " + obj["value"] +"g <br>";
     }
     temp = temp + "</div>"
     a.innerHTML = temp;
