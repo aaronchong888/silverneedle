@@ -81,7 +81,7 @@ function query(){
     alert("success!");
     var a = document.getElementById("result");
     temp = "<h2 class='heading'>Result</h2><br>";
-    temp += "<img src=\"http://silverneedle.azurewebsites.net/images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
+    temp += "<img style=\"width:200px;height:200px;\" src=\""+fu1+"\"><br>";
     temp += "<div class=\"result_text\">"
     temp += data["report"]["food"]["name"] + "<br><br>";
     temp += "<table>"
