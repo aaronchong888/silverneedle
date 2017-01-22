@@ -34,7 +34,7 @@
     print '<h2 class="heading"> What to eat next?</h2><br>';
     print '<div class="fileinput fileinput-new" data-provides="fileinput">';
     print '<img src="images/needle.png" alt="Take a Picture!" style="width:400px;height:400px;"><br>';
-    print '<input type="file" accept="image/*" capture="capture"><br>';
+    print '<input type="file" accept="image/*" capture="capture" id="FileUpload"><br>';
     print '<input type="submit" value="Check it out" onclick="upload()">';
     print '</div>';
   }
