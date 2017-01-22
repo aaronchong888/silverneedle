@@ -35,7 +35,7 @@ function login(){
             "language": "en",
         };
         var fu1 = document.getElementById("FileUpload").value.split(/(\\|\/)/g).pop();
-        alert("You selected " + fu1);
+        alert(fu1);
 
         $.ajax({
             url: "https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?" + $.param(params),
@@ -46,13 +46,13 @@ function login(){
             },
             type: "POST",
             // Request body
-            data: "{\"url\":\"http://silverneedle.azurewebsites.net/images/apple.jpg\"}",
+            data: "{\"url\":\"http://silverneedle.azurewebsites.net/images/"+fu1"\"}",
         })
         .done(function(data) {
             alert("success");
             var a = document.getElementById("result");
             temp = "<h2 class='heading'>Result</h2><br>";
-            temp = temp + "<img src=\"http://silverneedle.azurewebsites.net/images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
+            temp = temp + "<img src=\"http://silverneedle.azurewebsites.net/images/"+fu1+" style=\"width:200px;height:200px;\"><br>";
             temp = temp + "<div class=\"result_text\">"
             temp = temp + "<br>Description: <br>";
             tag = data["description"]["tags"].toString().split(',');
