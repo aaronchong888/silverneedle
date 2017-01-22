@@ -54,7 +54,7 @@ function login(){
             temp = temp + "<div class=\"result_text\">"
             temp = temp + "Description: <br>";
             tag = data["description"]["tags"].toString().split(',');
-            tag.forEach(function(entry){
+            tag.forEach(function(entry, idx, array){
               temp += "<a onclick=\"query()\">" + entry + "</a>";
               if (idx !== array.length - 1){ 
                 temp += ", ";
