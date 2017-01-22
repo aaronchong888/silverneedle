@@ -52,7 +52,7 @@ function login(){
             alert("success");
             var a = document.getElementById("result");
             temp = "<h2 class='heading'>Result</h2><br>";
-            temp = temp + "<img src=\"http://silverneedle.azurewebsites.net/images/"+fu1+" style=\"width:200px;height:200px;\"><br>";
+            temp = temp + "<img style=\"width:200px;height:200px;\" src=\"http://silverneedle.azurewebsites.net/images/"+fu1+"\"><br>";
             temp = temp + "<div class=\"result_text\">"
             temp = temp + "<br>Description: <br>";
             tag = data["description"]["tags"].toString().split(',');
