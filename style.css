@@ -26,6 +26,10 @@ h2 {
   font-size: 13px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 .login {
   width: 350px;
   position: absolute;
