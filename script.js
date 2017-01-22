@@ -74,11 +74,11 @@ function login(){
 function query(){
   var fu1 = document.getElementById("target_pic").src;
   if (fu1.localeCompare("http://silverneedle.azurewebsites.net/images/apple.jpg") == 0){
-    food_id = 09003;
+    food_id = "09003";
   } else if (fu1.localeCompare("http://silverneedle.azurewebsites.net/images/cake.jpeg") == 0){
-    food_id = 18086;
-  } else {
-    food_id = 06233;
+    food_id = "18086";
+  } else if (fu1.localeCompare("http://silverneedle.azurewebsites.net/images/spaghetti.jpg") == 0){
+    food_id = "06233";
   }
   alert(food_id);
 
