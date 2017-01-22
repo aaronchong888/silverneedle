@@ -35,7 +35,6 @@ function login(){
             "language": "en",
         };
         var fu1 = document.getElementById("FileUpload").value.split(/(\\|\/)/g).pop();
-        alert(fu1);
 
         $.ajax({
             url: "https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?" + $.param(params),
@@ -52,7 +51,7 @@ function login(){
             alert("success");
             var a = document.getElementById("result");
             temp = "<h2 class='heading'>Result</h2><br>";
-            temp = temp + "<img style=\"width:200px;height:200px;\" src=\"http://silverneedle.azurewebsites.net/images/"+fu1+"\"><br>";
+            temp = temp + "<img id=\"target_pic\" style=\"width:200px;height:200px;\" src=\"http://silverneedle.azurewebsites.net/images/"+fu1+"\"><br>";
             temp = temp + "<div class=\"result_text\">"
             temp = temp + "<br>Description: <br>";
             tag = data["description"]["tags"].toString().split(',');
@@ -73,6 +72,9 @@ function login(){
 }
 
 function query(){
+  var fu1 = document.getElementById("target_pic").src;
+  alert(fu1);
+
   $.get( "http://api.nal.usda.gov/ndb/reports/?ndbno=09003&type=b&format=json&api_key=7zFPyRh49yeSbG1RARODB9db2td0lHf3uoxNecfl", function() {
   })
   .done(function(data) {
