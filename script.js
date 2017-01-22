@@ -80,11 +80,12 @@ function query(){
     temp += "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
     temp += "<div class=\"result_text\">"
     temp += data["report"]["food"]["name"] + "<br><br>";
+    temp += "<table>"
     for (var i = 0; i < data["report"]["food"]["nutrients"].length; i++){
       var obj = data["report"]["food"]["nutrients"][i];
-      temp += obj["name"] + " : " + obj["value"] +"g <br>";
+      temp += "<tr><td>" + obj["name"] + "</td><td>" + obj["value"] + "g</td></tr>"
     }
-    temp = temp + "</div>"
+    temp = temp + "</table></div>"
     a.innerHTML = temp;
   })
   .fail(function() {
