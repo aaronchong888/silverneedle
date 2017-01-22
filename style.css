@@ -152,7 +152,6 @@ th, td {
 
 table {
     text-align: center;
-    position: absolute;
-    top: 77%;
-    left: 40%;
+    margin-left: 300px;
+    margin-top: 200px;
 }
