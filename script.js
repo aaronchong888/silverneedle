@@ -73,9 +73,16 @@ function login(){
 
 function query(){
   var fu1 = document.getElementById("target_pic").src;
-  alert(fu1);
+  if (fu1.localeCompare("http://silverneedle.azurewebsites.net/images/apple.jpg") == 0){
+    food_id = 09003;
+  } else if (fu1.localeCompare("http://silverneedle.azurewebsites.net/images/cake.jpeg") == 0){
+    food_id = 18086;
+  } else {
+    food_id = 06233;
+  }
+  alert(food_id);
 
-  $.get( "http://api.nal.usda.gov/ndb/reports/?ndbno=09003&type=b&format=json&api_key=7zFPyRh49yeSbG1RARODB9db2td0lHf3uoxNecfl", function() {
+  $.get( "http://api.nal.usda.gov/ndb/reports/?ndbno="+food_id+"&type=b&format=json&api_key=7zFPyRh49yeSbG1RARODB9db2td0lHf3uoxNecfl", function() {
   })
   .done(function(data) {
     alert("success!");
