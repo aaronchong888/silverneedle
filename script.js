@@ -98,7 +98,8 @@ function query(){
       var obj = data["report"]["food"]["nutrients"][i];
       temp += "<tr><td>" + obj["name"] + "</td><td>" + obj["value"] + "g</td></tr>";
     }
-    temp = temp + "</table></div>"
+    temp += "</table></div>";
+    temp += "<br><form action=\"index.php\"><input type=\"submit\" value=\"Try Again\" /></form>";
     a.innerHTML = temp;
   })
   .fail(function() {
