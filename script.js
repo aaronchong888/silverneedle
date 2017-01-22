@@ -83,6 +83,8 @@ function query(){
     food_id = "18086";
   } else if (fu1.localeCompare("http://silverneedle.azurewebsites.net/images/spaghetti.jpg") == 0){
     food_id = "06233";
+  } else if (fu1.localeCompare("http://silverneedle.azurewebsites.net/images/choco.jpeg") == 0){
+    food_id = "18096";
   }
   alert(food_id);
 
