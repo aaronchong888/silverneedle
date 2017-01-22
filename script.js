@@ -80,10 +80,13 @@ function query(){
     temp += "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
     temp += "<div class=\"result_text\">"
     temp += data["report"]["food"]["name"] + "<br><br>";
+    var count = 0;
     for (var i = 0; i < data["report"]["food"]["nutrients"].length; i++){
       var obj = data["report"]["food"]["nutrients"][i];
       for (var key in obj){
-        temp += obj["name"] + " : " + obj["value"] +"g <br>";
+        count++;
+        if (count % 6 === 1)
+          temp += obj["name"] + " : " + obj["value"] +"g <br>";
       }
     }
     temp = temp + "</div>"
