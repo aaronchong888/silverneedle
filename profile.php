@@ -8,7 +8,6 @@
     <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
     <script src="jquery-3.1.1.min.js"></script>
     <script src="script.js"></script>
-    <script src="js.cookie.js"></script>
   </head>
 
 <body>

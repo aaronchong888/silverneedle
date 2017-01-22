@@ -82,7 +82,7 @@ function query(){
   } else if (fu1.localeCompare("http://silverneedle.azurewebsites.net/images/choco.jpeg") == 0){
     food_id = "18096";
   }
-  alert(food_id);
+  //alert(food_id);
 
   $.get( "http://api.nal.usda.gov/ndb/reports/?ndbno="+food_id+"&type=b&format=json&api_key=7zFPyRh49yeSbG1RARODB9db2td0lHf3uoxNecfl", function() {
   })
