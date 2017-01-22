@@ -142,3 +142,10 @@ input[type="submit"].log_out:hover {
   color: white;
   font: 13px;
 }
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    height: 30px;
+    vertical-align: center;
+}
