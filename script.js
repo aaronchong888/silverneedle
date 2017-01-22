@@ -109,8 +109,8 @@ function query(){
       Cookies.set('protein', new_protein);
       Cookies.set('fat', new_fat);
       Cookies.set('sugar', new_sugar);
-      alert(Cookies.get('energy'));
     }
+    alert(Cookies.get('energy'));
     temp = temp + "</table></div>"
     a.innerHTML = temp;
   })
