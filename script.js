@@ -13,10 +13,6 @@ function login(){
 		  a.innerHTML = "<h3>Invalid user name or password.</h3>";
 	  } else {
       window.location.reload();
-      Cookies.set('energy', 0, { expires: 7 });
-      Cookies.set('protein', 0, { expires: 7 });
-      Cookies.set('fat', 0, { expires: 7 });
-      Cookies.set('sugar', 0, { expires: 7 });
 	  }
     }
   }
@@ -101,17 +97,7 @@ function query(){
     for (var i = 0; i < data["report"]["food"]["nutrients"].length; i++){
       var obj = data["report"]["food"]["nutrients"][i];
       temp += "<tr><td>" + obj["name"] + "</td><td>" + obj["value"] + "g</td></tr>";
-      var new_energy += parseInt(Cookies.get('energy'));
-      var new_protein += parseInt(Cookies.get('protein'));
-      var new_fat += parseInt(Cookies.get('fat'));
-      var new_sugar += parseInt(Cookies.get('sugar'));
-      Cookies.set('energy', new_energy);
-      Cookies.set('protein', new_protein);
-      Cookies.set('fat', new_fat);
-      Cookies.set('sugar', new_sugar);
     }
-    alert("Energy : " + Cookies.get('energy'));
-    alert("Protein : " + Cookies.get('protein'));
     temp = temp + "</table></div>"
     a.innerHTML = temp;
   })
