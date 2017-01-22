@@ -52,7 +52,7 @@ function login(){
             temp = "<h2 class='heading'>Result</h2><br>";
             temp = temp + "<img src=\"images/apple.jpg\" alt=\"Apple\" style=\"width:200px;height:200px;\"><br>";
             temp = temp + "<div class=\"result_text\">"
-            temp = temp + "Description: <br>";
+            temp = temp + "<br>Description: <br>";
             tag = data["description"]["tags"].toString().split(',');
             tag.forEach(function(entry, idx, array){
               temp += "<a onclick=\"query()\">" + entry + "</a>";
@@ -71,14 +71,13 @@ function login(){
 }
 
 function query(){
-  $.get( "example.php", function() {
-    alert( "success" );
+  $.get( "http://api.nal.usda.gov/ndb/reports/?ndbno=09003&type=b&format=json&api_key=7zFPyRh49yeSbG1RARODB9db2td0lHf3uoxNecfl", function() {
   })
   .done(function(data) {
-    alert( "second success" );
+    alert("success!");
   })
   .fail(function() {
-    alert( "error" );
+    alert("error!");
   });
 }
 /*
